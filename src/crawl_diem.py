@@ -17,10 +17,6 @@ def tracudiem (sbd: str, nam: int = 2025):
     res = requests.get(url, params = params, headers = headers)
 
     print('Status code: ', res.status_code)
-    try: 
-        data = res.text
-        print("Kết quả: ", data)
-    except: 
-        print("Không thể đọc json")
+    print("Kết quả: ", res.text)
 
 tracudiem("01016799")
