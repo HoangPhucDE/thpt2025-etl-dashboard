@@ -19,6 +19,15 @@ Dự án được triển khai theo mô hình **ETL pipeline hoàn chỉnh**, t�
 
 ## 🏗️ Kiến trúc pipeline
 
+[Crawl dữ liệu] 
+      ↓
+[Làm sạch & chuẩn hóa] 
+      ↓
+[Lưu trữ (CSV / SQLite)] 
+      ↓
+[Phân tích & thống kê] 
+      ↓
+[Dashboard trực quan (Streamlit)]
 
 ---
 
@@ -33,6 +42,31 @@ Dự án được triển khai theo mô hình **ETL pipeline hoàn chỉnh**, t�
 | Quản lý dự án     | `Git`, `GitHub`                                |
 
 ---
+
+📁 Cấu trúc thư mục
+
+thpt2025-etl-dashboard/
+│
+├── data/                 # Dữ liệu thô và dữ liệu đã xử lý (CSV)
+│
+├── src/                  # Mã nguồn chính cho ETL pipeline
+│   ├── crawl_diem.py         # Thu thập dữ liệu
+│   ├── clean_dulieu.py       # Làm sạch và chuẩn hóa
+│   ├── analyze.py            # Phân tích dữ liệu
+│   └── utils.py              # Các hàm hỗ trợ
+│
+├── dashboard/            # Ứng dụng dashboard Streamlit
+│   └── dashboard.py
+│
+├── docs/                 # Hình ảnh, tài liệu mô tả, kết quả
+│
+├── main.py               # Chạy toàn bộ pipeline ETL
+├── requirements.txt      # Danh sách thư viện cần cài đặt
+├── .gitignore
+└── README.md
+
+git clone https://github.com/<your-username>/thpt2025-etl-dashboard.git
+cd thpt2025-etl-dashboard
 
 ## 📁 Cấu trúc thư mục
 
