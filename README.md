@@ -67,6 +67,3 @@ thpt2025-etl-dashboard/
 
 git clone https://github.com/<your-username>/thpt2025-etl-dashboard.git
 cd thpt2025-etl-dashboard
-
-## 📁 Cấu trúc thư mục
-
